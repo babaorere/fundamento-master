@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Red del café</title>
-    <link href="../static/imgs/favicon.ico" rel="shortcut icon">
 
-
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="{{ url_for('static', filename = 'css/style.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='imgs/favicon.ico') }}">
+
 </head>
 
 <body>
@@ -27,25 +26,25 @@
                 <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Acercade">Acercade</a>
+                <a class="nav-link" href="{{ url_for('acerca_de') }}">Acerca de ...</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Trilladoras">Trilladora</a>
+                <a class="nav-link" href="{{ url_for('trilladoras') }}">Trilladoras</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Foro</a>
+                <a class="nav-link" href="{{ url_for('foro') }}">Foro</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Cálculo_fr</a>
+                <a class="nav-link" href="{{ url_for('calculo_fr') }}">Cálculo_fr</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Infórmate</a>
+                <a class="nav-link" href="{{ url_for('informate') }}">Infórmate</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="registro">Registro</a>
+                <a class="nav-link" href="{{ url_for('registro') }}">Registro</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="login">Ingresar</a>
+                <a class="nav-link" href="{{ url_for('login') }}">Ingresar</a>
             </li>
         </ul>
 
